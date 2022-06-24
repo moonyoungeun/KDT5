@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform test</title>
+
+    <style>
+        body{padding: 40px;}
+
+        .item{width: 100px; height: 100px; background-color: paleturquoise;
+        transition: 0.5s;}
+
+        .it{width: 100px; height: 100px; background-color: red;}
+
+        .it:active{transform:rotate(45deg);}
+
+        .it2{width: 100px; height: 100px; background-color: red;}
+
+        .item2{width: 100px; height: 100px; background-color: coral;
+        transition: 1s;}
+
+        .item2:active{transform:translate(120px,0px) scaleX(2);}
+
+        .item3{width: 100px; height: 100px; background-color:  paleturquoise;
+        transition: 1s;}
+
+        .item3:active{transform:perspective(250px) rotateY(45deg);}
+
+
+        .item4{width: 100px; height: 100px; background-color:  coral;
+        transition: 1s;}
+
+        .item4:active{transform:translate(26px,0px) sKewX(-30deg);}
+
+        .it4{width: 100px; height: 100px; background-color: red;}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="item">
+        <div class="it"></div>
+    </div>
+    <br/>
+    <br/>
+    <div class="it2">
+        <div class="item2"></div>
+    </div>
+    <br/>
+    <br/>
+    <div class="item3"></div>
+    <br/>
+    <br/>
+    <div class="it4">
+        <div class="item4"></div>
+    </div>
+</body>
+</html>

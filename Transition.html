@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{width: 100px; height: 100px;
+        background-color: skyblue;
+        transition: 1s;}
+        div:active{width: 300px;
+        background-color: orange;}
+
+       .width{width: 100px; height: 100px;
+        background-color: skyblue;
+        transition: width  height 0.5s;
+        background-color: 2s;}
+
+        .width:active{width: 300px;
+            height: 300px;
+        background-color: orange;}
+
+        .width2{width: 100px; height: 100px;
+        background-color: skyblue;
+        transition: ease-in 1s;
+        background-color: 2s;}
+
+        .width2:active{width: 300px;
+            height: 300px;
+        background-color: orange;}
+
+        .width3{width: 100px; height: 100px;
+        background-color: skyblue;
+        transition: 1s ease 0.5s;
+        background-color: 2s;}
+
+        .width3:active{width: 300px;
+            height: 300px;
+        background-color: orange;}
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <br/>
+    <div class="width"></div>
+    <br/>
+    <div class="width2"></div>
+    <br/>
+    <div class="width3"></div>
+    
+</body>
+</html>

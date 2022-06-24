@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body{padding: 40px;}
+
+        div{width: 100px; height: 100px; background-color: paleturquoise;
+        transition: 0.5s;}
+
+        div:active{transform:rotate(45deg);}
+
+        .m{width: 100px; height: 100px; background-color: coral;
+        transition: 1s;}
+
+        .m:active{transform:translate(40px,40px);}
+
+        .y{width: 100px; height: 100px; background-color:  paleturquoise;
+        transition: 1s; opacity: 0.5;}
+
+        .y:active{transform:scale(1.5);}
+
+
+        .e{width: 100px; height: 100px; background-color: coral;
+        transition: 1s; opacity: 0.5;}
+
+        .e:active{transform:scaleX(1.5);}
+
+
+        .m1{width: 100px; height: 100px; background-color:  paleturquoise;
+        transition: 1s;}
+
+        .m1:active{transform:rotateX(45deg);}
+
+
+        .y1{width: 100px; height: 100px; background-color:  coral;
+        transition: 1s;}
+
+        .y1:active{transform:perspective(250px) rotateX(45deg);}
+
+
+        .e1{width: 100px; height: 100px; background-color: paleturquoise;
+        transition: 1s;}
+
+        .e1:active{transform:perspective(250px) rotateX(45deg) rotateY(45deg);}
+
+        
+        .m2{width: 100px; height: 100px; background-color:  coral;
+        transition: 1s;}
+
+        .m2:active{transform:sKewX(30deg);}
+
+        .e2{width: 100px; height: 100px; background-color:  coral;
+        transition:rotateX(180) 1s;}
+
+        .e2:active{transform:sKewX(30deg);}
+
+
+        .y2{width: 100px; height: 100px; background-color:  coral;
+        transition:rotateX(180) 1s; backface-visibility: hidden;}
+
+        .y2:active{transform:rotateY(180deg);}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <br/>
+    <br/>
+    <div class="m"></div>
+    <br/>
+    <br/>
+    <div class="y"></div>
+    <br/>
+    <br/>
+    <div class="e"></div>
+    <br/>
+    <br/>
+    <div class="m1"></div>
+    <br/>
+    <br/>
+    <div class="y1"></div>
+    <br/>
+    <br/>
+    <div class="e1"></div>
+    <br/>
+    <br/>
+    <div class="m2"></div>
+    <br/>
+    <br/>
+    <div class="y2">문영은</div>
+</body>
+</html>
