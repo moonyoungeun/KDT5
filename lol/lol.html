@@ -15,71 +15,82 @@
             background-size: auto;
             display: flex;
             flex-wrap: wrap; 
-            justify-content:center;}
+            justify-content:center;
+        align-content: flex-start;}
         
         .hero{ 
-            background-color: gray; 
-            width: 80px; 
+            width: 84px; 
             height: 84px; 
-            margin: 6px; 
-            border: 1px solid white; 
-           
+            margin: 6px;        
             overflow: hidden;}
         
-        .hero:hover{background-color: white;
-            border: hidden;
-         
+        .hero:hover{
+            border:  3px groove white;
+            width: 84px; 
+            height: 84px; 
+            margin: 6px; 
             transition: ease-in-out 0.5s;
             z-index: 1;}
 
 
-        .container .heroes .hero .image{width: 90px; height: 90px;
+
+        .hero:active{
+            border: hidden;
+            transition: ease-in-out 0.5s;
+            z-index: 1;
+            border: 3px groove silver;}
+
+
+
+        .container .heroes .hero .image{width: 78px; height: 78px;
             background-size:cover;
             background-position:center;
             background-repeat:no-repeat;
+            border: 3px groove white;
+            
            }
 
 
-            .container .logo {
+            /* .container .logo {
             max-width: 300px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         .container .logo img {
-            width: 100%;}
+            width: 100%;} */
 
 
-        .container .heroes .hero:nth-child(1) .image{background-image: url("./image/hero1.png");}
-        .container .heroes .hero:nth-child(2) .image{background-image: url("/image/hero2.png");}
-        .container .heroes .hero:nth-child(3) .image{background-image: url("/image/hero3.png");}
-        .container .heroes .hero:nth-child(4) .image{background-image: url("./image/hero4.png");}
-        .container .heroes .hero:nth-child(5) .image{background-image: url("./image/hero5.png");}
-        .container .heroes .hero:nth-child(6) .image{background-image: url("./image/hero6.png");}
-        .container .heroes .hero:nth-child(7) .image{background-image: url("./image/hero7.png");}
-        .container .heroes .hero:nth-child(8) .image{background-image: url("./image/hero8.png");}
-        .container .heroes .hero:nth-child(9) .image{background-image: url("./image/hero9.png");}
-        .container .heroes .hero:nth-child(10) .image{background-image: url("./image/hero10.png");}
-        .container .heroes .hero:nth-child(11) .image{background-image: url("./image/hero11.png");}
-        .container .heroes .hero:nth-child(12) .image{background-image: url("./image/hero12.png");}
-        .container .heroes .hero:nth-child(13) .image{background-image: url("./image/hero13.png");}
-        .container .heroes .hero:nth-child(14) .image{background-image: url("./image/hero14.png");}
-        .container .heroes .hero:nth-child(15) .image{background-image: url("./image/hero15.png");}
-        .container .heroes .hero:nth-child(16) .image{background-image: url("./image/hero16.png");}
-        .container .heroes .hero:nth-child(17) .image{background-image: url("./image/hero17.png");}
-        .container .heroes .hero:nth-child(18) .image{background-image: url("./image/hero18.png");}
-        .container .heroes .hero:nth-child(19) .image{background-image: url("./image/hero19.png");}
-        .container .heroes .hero:nth-child(20) .image{background-image: url("./image/hero20.png");}
-        .container .heroes .hero:nth-child(21) .image{background-image: url("./image/hero21.png");}
-        .container .heroes .hero:nth-child(22) .image{background-image: url("./image/hero22.png");}
-        .container .heroes .hero:nth-child(23) .image{background-image: url("./image/hero23.png");}
-        .container .heroes .hero:nth-child(24) .image{background-image: url("./image/hero24.png");}
-        .container .heroes .hero:nth-child(25) .image{background-image: url("./image/hero25.png");}
-        .container .heroes .hero:nth-child(26) .image{background-image: url("./image/hero26.png");}
-        .container .heroes .hero:nth-child(27) .image{background-image: url("./image/hero27.png");}
-        .container .heroes .hero:nth-child(28) .image{background-image: url("./image/hero28.png");}
-        .container .heroes .hero:nth-child(29) .image{background-image: url("./image/hero29.png");}
-        .container .heroes .hero:nth-child(30) .image{background-image: url("./image/hero30.png");}
+        .container .heroes .hero:nth-child(1) .image{background-image: url("/lol/champions/01.png");}
+        .container .heroes .hero:nth-child(2) .image{background-image: url("/lol/champions/02.png");}
+        .container .heroes .hero:nth-child(3) .image{background-image: url("/lol/champions/03.png");}
+        .container .heroes .hero:nth-child(4) .image{background-image: url("/lol/champions/04.png");}
+        .container .heroes .hero:nth-child(5) .image{background-image: url("/lol/champions/05.png");}
+        .container .heroes .hero:nth-child(6) .image{background-image: url("/lol/champions/06.png");}
+        .container .heroes .hero:nth-child(7) .image{background-image: url("/lol/champions/07.png");}
+        .container .heroes .hero:nth-child(8) .image{background-image: url("/lol/champions/08.png");}
+        .container .heroes .hero:nth-child(9) .image{background-image: url("/lol/champions/09.png");}
+        .container .heroes .hero:nth-child(10) .image{background-image: url("/lol/champions/10.png");}
+        .container .heroes .hero:nth-child(11) .image{background-image: url("/lol/champions/11.png");}
+        .container .heroes .hero:nth-child(12) .image{background-image: url("/lol/champions/12.png");}
+        .container .heroes .hero:nth-child(13) .image{background-image: url("/lol/champions/13.png");}
+        .container .heroes .hero:nth-child(14) .image{background-image: url("/lol/champions/14.png");}
+        .container .heroes .hero:nth-child(15) .image{background-image: url("/lol/champions/15.png");}
+        .container .heroes .hero:nth-child(16) .image{background-image: url("/lol/champions/16.png");}
+        .container .heroes .hero:nth-child(17) .image{background-image: url("/lol/champions/17.png");}
+        .container .heroes .hero:nth-child(18) .image{background-image: url("/lol/champions/18.png");}
+        .container .heroes .hero:nth-child(19) .image{background-image: url("/lol/champions/19.png");}
+        .container .heroes .hero:nth-child(20) .image{background-image: url("/lol/champions/20.png");}
+        .container .heroes .hero:nth-child(21) .image{background-image: url("/lol/champions/21.png");}
+        .container .heroes .hero:nth-child(22) .image{background-image: url("/lol/champions/22.png");}
+        .container .heroes .hero:nth-child(23) .image{background-image: url("/lol/champions/23.png");}
+        .container .heroes .hero:nth-child(24) .image{background-image: url("/lol/champions/24.png");}
+        .container .heroes .hero:nth-child(25) .image{background-image: url("/lol/champions/25.png");}
+        .container .heroes .hero:nth-child(26) .image{background-image: url("/lol/champions/26.png");}
+        .container .heroes .hero:nth-child(27) .image{background-image: url("/lol/champions/27.png");}
+        .container .heroes .hero:nth-child(28) .image{background-image: url("/lol/champions/28.png");}
+        .container .heroes .hero:nth-child(29) .image{background-image: url("/lol/champions/29.png");}
+        .container .heroes .hero:nth-child(30) .image{background-image: url("/lol/champions/30.png");}
         
 
         
@@ -184,9 +195,9 @@
                     <div class="image"></div>
             </div>
         </div>
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="/image/logo_overwatch.png" />
-        </div>
+        </div> -->
     </div>
 </body>
     
