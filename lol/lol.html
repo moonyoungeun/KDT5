@@ -26,10 +26,12 @@
             width: 84px; 
             height: 84px; 
             margin: 13px 15px;}
+
         
         .hero:hover{
-            
-            border:  3px groove gold;
+            border: 3px;
+            border-style: solid;
+            border-color: yellow;
             width: 84px; 
             height: 84px; 
             margin: 6px; 
@@ -38,11 +40,12 @@
 
 
 
-        .hero:active{
-            transition: ease-in-out 0.5s;
+        .image:active{
             z-index: 1;
             border: 3px groove silver;
-            filter:grayscale(100%);}
+            filter:grayscale(100%);
+            border-radius: 50%;  
+        }
 
 
 
@@ -52,6 +55,8 @@
             background-repeat:no-repeat;
             border: 3px groove white;            
            }
+
+
 
      
         .name{color:white; text-align: center; margin: 5px auto; font-size: 12px; }
